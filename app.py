@@ -30,8 +30,8 @@ def after_request(response):
 
 @app.route("/", methods=["GET", "POST"])
 def template_test():
-    return render_template('/index.html')
+    return render_template('/start.html')
 
 @app.route("/sznio", methods=["GET", "POST"])
 def temp():
-    return render_template('/index.html')
+    return render_template('/start.html')
