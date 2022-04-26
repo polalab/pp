@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Template Example</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <style>
+    h3 {
+      font-style: italic;
+      font-weight: 100;
+      color: #746d75
+    }
+
+    h1{
+      font-style: normal;
+      font-weight: 300;
+      color: #746d75
+    }
+    .margin_nav {
+      margin-left: 100px;
+      margin-top: 20px;
+    }
+    .bc-pink{
+      background-color: #CEABB1;
+    }
+
+    .font-grey{
+      color: #746d75
+    }
+
+    .image_resize_1{
+      width: 40%;
+    }
+  </style>
+
+  </head>
+  <body>
+    <div class="container-fluid bc-pink" id="navigation-bar">   
+      <h1 class="text-center"> Diversity in photography</h1> 
+      <h3 class="text-center">by Pola Labedzka</h3>
+
+        <ul class="nav nav-pills nav-fill margin_nav ">
+          <li class="nav-item">
+            <a class="nav-link active font-grey" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-grey" href="#">Much longer nav link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-grey" href="#">Link</a>
+          </li>
+        </ul>
+  </div>
+  {% block main %}{% endblock %}
+  </body>
+
+
+</html>
